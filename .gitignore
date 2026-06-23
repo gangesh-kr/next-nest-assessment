@@ -1,0 +1,19 @@
+# Dependencies
+**/node_modules
+
+# Next.js
+frontend/.next
+
+# NestJS
+backend/dist
+
+# Coverage
+**/coverage
+
+# Env files
+**/.env
+**/.env.local
+
+# Logs
+*.log
+npm-debug.log*
