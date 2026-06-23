@@ -107,3 +107,15 @@ Click the **Authorize** button at the top right of the Swagger page, paste the t
 
 **Step 4 — Test protected routes**  
 `GET /api/users`, `PATCH`, and `DELETE` endpoints are now accessible.
+
+---
+
+## Generating a JWT Secret
+
+Run this in your terminal to generate a secure secret for `JWT_SECRET`:
+
+```bash
+node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+```
+
+Copy the output and paste it into your `.env` file.
